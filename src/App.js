@@ -1,7 +1,11 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" replace={true}/>}/>
+      <Route path="/home" element={<Homepage />} />
+    </Routes>
+  );
 }
