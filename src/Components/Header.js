@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between w-full h-16 font-bellefair  pl-2">
       <img src={Logo} className="h-[2rem] w-[2rem] " />
-      <div className=" w-1/3 ml-20 z-20 desktop:border-[1px] border-white1 brightness-50 absolute left-16"></div>
-      <section className="flex   max-w-1/2 h-full backdrop-blur-xl">
-        <ul className="mobile:hidden tablet:flex text-sm gap-10 justify-center items-center text-white backdrop-blur-lg h-full backdrop-brightness-110 px-4 ">
+      <div className=" flex-grow  ml-20 z-20 desktop:border-[1px] border-white1 brightness-50  "></div>
+      <section className="mobile:hidden tablet:flex justify-end px-4 items-center  max-w-2xl h-full backdrop-blur-xl  ">
+        <ul className="mobile:hidden tablet:flex text-sm gap-10 justify-center items-center text-white backdrop-blur-lg h-full backdrop-brightness-110  ">
           <li>
             <span className="font-bold mx-2">00</span>HOME
           </li>
