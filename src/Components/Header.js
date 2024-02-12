@@ -6,7 +6,7 @@ export default function Header() {
       <img src={Logo} className="h-[2rem] w-[2rem] " />
       <div className=" flex-grow  ml-20 z-20 desktop:border-[1px] border-white1 brightness-50  "></div>
       <section className="mobile:hidden tablet:flex justify-end px-4 items-center  max-w-2xl h-full backdrop-blur-xl  ">
-        <ul className="mobile:hidden tablet:flex text-sm gap-10 justify-center items-center text-white backdrop-blur-lg h-full backdrop-brightness-110  ">
+        <ul className="mobile:hidden tablet:flex text-[16px] gap-10 justify-center items-center text-white backdrop-blur-lg h-full backdrop-brightness-110  ">
           <li>
             <span className="font-bold mx-2">00</span>HOME
           </li>
