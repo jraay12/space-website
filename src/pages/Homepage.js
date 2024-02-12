@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "../Components/Header";
 
 export default function Homepage() {
@@ -32,6 +33,7 @@ export default function Homepage() {
             <button className="hidden bg-white opacity-50 rounded-full group-hover:block w-60 h-60 border-2 absolute -inset-10 z-10 outline-none transition duration-300 ease-in-out"></button>
           </div>
         </div>
+        <Outlet />
       </section>
     </div>
   );

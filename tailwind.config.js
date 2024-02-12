@@ -15,6 +15,10 @@ module.exports = {
         desktop: "url('/src/images/home/desktop.jpg')",
         mobile: "url('/src/images/home/mobile.jpg')",
         tablet: "url('/src/images/home/tablet.jpg')",
+        destinationDesktop: "url('/src/images/destination/desktop.jpg')",
+        destinationTablet: "url('/src/images/destination/tablet.jpg')",
+        destinationMobile: "url('/src/images/destination/mobile.jpg')",
+
       },
       screens: {
         mobile: "375px",
