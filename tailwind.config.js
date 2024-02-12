@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: "hsl(230, 35%, 7%)",
-        white: "hsl(0, 0%, 100%)",
+        black1: "hsl(230, 35%, 7%)",
+        white1: "hsl(0, 0%, 100%)",
         lightWhite: "hsl(231, 77%, 90%)",
       },
       fontFamily: {
