@@ -109,8 +109,11 @@ export default function Crew() {
         </div>
         <img
           src={douglas}
-          className="max-w-xs desktop:absolute right-40 "
+          className="max-w-xs xldesktop:max-w-lg desktop:absolute right-40 bottom-0"
           id="picture"
+          data-aos="zoom in"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in"
         />
       </section>
     </div>
