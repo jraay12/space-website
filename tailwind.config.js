@@ -21,12 +21,24 @@ module.exports = {
         CrewDesktop: "url('/src/images/crew/CrewDesktop.jpg')",
         CrewTablet: "url('/src/images/crew/CrewTablet.jpg')",
         CrewMobile: "url('/src/images/crew/CrewMobile.jpg')",
+        TechnologyDesktop: "url('/src/images/technology/desktop.jpg')",
+        TechnologyTablet: "url('/src/images/technology/tablet.jpg')",
+        TechnologyMobile: "url('/src/images/technology/mobile.jpg')",
       },
       screens: {
         mobile: "375px",
         desktop: "1024px",
         xldesktop: "1440px",
         tablet: "768px",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotateY(0deg)" },
+          "50%": { transform: "rotateY(180deg)" },
+        },
+      },
+      animation: {
+        "rotate-3d": "wiggle 5s linear infinite",
       },
     },
   },

@@ -11,9 +11,13 @@ export default function Header() {
   const navigateToCrew = () => {
     navigate("/Crew");
   };
-  
+
   const handleHome = () => {
     navigate("/home");
+  };
+
+  const navigateToTechnology = () => {
+    navigate("/Technology");
   };
   return (
     <header className="flex items-center justify-between w-full h-16 font-bellefair  pl-2">
@@ -33,10 +37,16 @@ export default function Header() {
           >
             <span className="font-bold mx-2">01</span>DESTINATION
           </li>
-          <li className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in" onClick={navigateToCrew}>
+          <li
+            className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in"
+            onClick={navigateToCrew}
+          >
             <span className="font-bold mx-2">02</span>CREW
           </li>
-          <li className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in">
+          <li
+            className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in"
+            onClick={navigateToTechnology}
+          >
             <span className="font-bold mx-2">03</span>TECHNOLOGY
           </li>
         </ul>
