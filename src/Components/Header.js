@@ -8,6 +8,10 @@ export default function Header() {
     navigate("/Destination");
   };
 
+  const navigateToCrew = () => {
+    navigate("/Crew");
+  };
+  
   const handleHome = () => {
     navigate("/home");
   };
@@ -29,7 +33,7 @@ export default function Header() {
           >
             <span className="font-bold mx-2">01</span>DESTINATION
           </li>
-          <li className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in">
+          <li className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in" onClick={navigateToCrew}>
             <span className="font-bold mx-2">02</span>CREW
           </li>
           <li className="hover:cursor-pointer hover:scale-x-110 duration-300 ease-in">

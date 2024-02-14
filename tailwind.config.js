@@ -18,7 +18,9 @@ module.exports = {
         destinationDesktop: "url('/src/images/destination/desktop.jpg')",
         destinationTablet: "url('/src/images/destination/tablet.jpg')",
         destinationMobile: "url('/src/images/destination/mobile.jpg')",
-
+        CrewDesktop: "url('/src/images/crew/CrewDesktop.jpg')",
+        CrewTablet: "url('/src/images/crew/CrewTablet.jpg')",
+        CrewMobile: "url('/src/images/crew/CrewMobile.jpg')",
       },
       screens: {
         mobile: "375px",

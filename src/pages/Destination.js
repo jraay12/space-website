@@ -49,7 +49,7 @@ export default function Destination() {
       <section className="flex flex-col desktop:flex-row min-h-full mt-10 ">
         <section className="desktop:w-1/2 min-h-full text-white ">
           <div className="flex flex-col desktop:ml-10">
-            <h1 className="text-md desktop:text-2xl font-thin text-center desktop:text-start">
+            <h1 className="text- sm desktop:text-2xl font-thin text-center desktop:text-start">
               <span className="text-gray-700 font-bold mx-4">01</span>PICK YOUR
               DESTINATION
             </h1>
