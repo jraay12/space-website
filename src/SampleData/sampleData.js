@@ -6,6 +6,12 @@ import first from "../images/crew/image-douglas-hurley.png";
 import second from "../images/crew/image-mark-shuttleworth.png";
 import third from "../images/crew/image-victor-glover.png";
 import forth from "../images/crew/image-anousheh-ansari.png";
+import tech1 from "../images/technology/image-launch-vehicle-landscape.jpg";
+import tech2 from "../images/technology/image-launch-vehicle-portrait.jpg";
+import nice1 from "../images/technology/image-space-capsule-landscape.jpg";
+import nice2 from "../images/technology/image-space-capsule-portrait.jpg";
+import port from "../images/technology/image-spaceport-landscape.jpg";
+import port2 from "../images/technology/image-spaceport-portrait.jpg";
 
 const data = {
   destinations: [
@@ -96,8 +102,8 @@ const data = {
     {
       name: "Launch vehicle",
       images: {
-        portrait: "./assets/technology/image-launch-vehicle-portrait.jpg",
-        landscape: "./assets/technology/image-launch-vehicle-landscape.jpg",
+        portrait: tech2,
+        landscape: tech1,
       },
       description:
         "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
@@ -105,8 +111,8 @@ const data = {
     {
       name: "Spaceport",
       images: {
-        portrait: "./assets/technology/image-spaceport-portrait.jpg",
-        landscape: "./assets/technology/image-spaceport-landscape.jpg",
+        portrait: nice2,
+        landscape: nice1,
       },
       description:
         "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
@@ -114,8 +120,8 @@ const data = {
     {
       name: "Space capsule",
       images: {
-        portrait: "./assets/technology/image-space-capsule-portrait.jpg",
-        landscape: "./assets/technology/image-space-capsule-landscape.jpg",
+        portrait: port2,
+        landscape: port,
       },
       description:
         "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",

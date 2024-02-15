@@ -13,8 +13,8 @@ export default function Crew() {
   let currentIndex = 0;
 
   const changeContent = () => {
-    const value = sample.crew[currentIndex];
-    console.log(value);
+    let value = sample.crew[currentIndex];
+
     document.getElementById("picture").src = value?.images?.png;
     document.getElementById("name").textContent = value?.name;
     document.getElementById("role").textContent = value?.role;
@@ -114,7 +114,6 @@ export default function Crew() {
           id="picture"
           data-aos="fade-left"
           data-aos-duration="1500"
-          data-aos-easing="ease-in"
         />
       </section>
     </div>

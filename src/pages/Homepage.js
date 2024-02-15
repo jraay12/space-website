@@ -1,11 +1,27 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
+import { useState, useEffect } from "react";
 
 export default function Homepage() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setIsSidebarOpen(false);
+  }, []);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+    document.body.classList.toggle("overflow-hidden", isSidebarOpen);
+  };
   return (
-    <div className="flex flex-col min-w-full min-h-screen mobile:bg-mobile  tablet:bg-tablet desktop:bg-desktop bg-no-repeat bg-cover overflow-hidden font-bellefair">
+    <div
+      className={`flex flex-col min-w-full min-h-screen mobile:bg-mobile  tablet:bg-tablet desktop:bg-desktop bg-no-repeat bg-cover overflow-hidden font-bellefair ${
+        isSidebarOpen ? "max-h-screen" : null
+      }`}
+    >
       <section className="desktop:pt-10 pl-10 ">
-        <Header />
+        <Header open={toggleSidebar} />
       </section>
       <section className="flex mobile:flex-col desktop:flex-row justify-center items-center max-h-full mt-10">
         <div className="flex justify-center items-start desktop:items-end w-1/2 h-96  text-lightWhite ">
@@ -35,6 +51,20 @@ export default function Homepage() {
         </div>
         <Outlet />
       </section>
+      {isSidebarOpen ? (
+        <div
+          className={`tablet:hidden min-h-screen w-1/2 absolute right-0 backdrop-blur-3xl text-white ${
+            isSidebarOpen ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col gap-5 mt-10 m-4 font-thin">
+            <li onClick={() => navigate("/home")}>00 HOME</li>
+            <li onClick={() => navigate("/Destination")}>01 DESTINATION</li>
+            <li onClick={() => navigate("/Crew")}>02 CREW</li>
+            <li onClick={() => navigate("/Technology")}>03 TECHNOLOGY</li>
+          </ul>
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "../images/shared/logo.svg";
 
-export default function Header() {
+export default function Header({open}) {
   const navigate = useNavigate();
 
   const handleDestination = () => {
@@ -52,7 +52,7 @@ export default function Header() {
         </ul>
       </section>
       <div className="tablet:hidden mobile:flex justify-center items-center mx-4 h-full">
-        <button className="text-white text-2xl">&#9776;</button>
+        <button className="text-white text-2xl" onClick={open}>&#9776;</button>
       </div>
     </header>
   );
