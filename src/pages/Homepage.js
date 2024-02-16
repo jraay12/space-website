@@ -43,7 +43,7 @@ export default function Homepage() {
         </div>
         <div className="flex justify-center items-center desktop:items-end w-1/2 h-96 bg-transparent ">
           <div className="group relative">
-            <button className="w-40 h-40 rounded-full bg-white outline-none relative z-20 transition duration-300 ease-in-out hover:bg-gray-100">
+            <button className="w-40 h-40 rounded-full bg-white outline-none relative z-20 transition duration-300 ease-in-out hover:bg-gray-100 ">
               EXPLORE
             </button>
             <button className="hidden bg-white opacity-50 rounded-full group-hover:block w-60 h-60 border-2 absolute -inset-10 z-10 outline-none transition duration-300 ease-in-out"></button>

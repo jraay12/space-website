@@ -37,6 +37,7 @@ export default function Crew() {
     currentIndex = 3;
     changeContent();
   };
+
   return (
     <div className="min-w-full min-h-screen mobile:bg-CrewMobile tablet:bg-CrewTablet desktop:bg-CrewDesktop bg-no-repeat bg-cover overflow-hidden  select-none relative">
       <section className="desktop:pt-10 pl-10 ">
@@ -110,10 +111,8 @@ export default function Crew() {
         </div>
         <img
           src={douglas}
-          className="max-w-xs xldesktop:max-w-lg desktop:absolute right-40 bottom-0 bg-transparent"
+          className="max-w-xs xldesktop:max-w-lg desktop:absolute right-40 bottom-0 "
           id="picture"
-          data-aos="fade-left"
-          data-aos-duration="1500"
         />
       </section>
     </div>
